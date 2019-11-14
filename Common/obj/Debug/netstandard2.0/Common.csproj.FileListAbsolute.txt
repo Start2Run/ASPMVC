@@ -1,0 +1,8 @@
+C:\repos\aspmvc\Common\bin\Debug\netstandard2.0\Common.deps.json
+C:\repos\aspmvc\Common\bin\Debug\netstandard2.0\Common.dll
+C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+C:\repos\aspmvc\Common\bin\Debug\netstandard2.0\Common.pdb
+C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.dll
+C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.pdb

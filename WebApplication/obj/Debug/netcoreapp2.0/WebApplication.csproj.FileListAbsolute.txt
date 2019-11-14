@@ -1,0 +1,17 @@
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\appsettings.Development.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\appsettings.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\bundleconfig.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication.deps.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication.runtimeconfig.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication.runtimeconfig.dev.json
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication.dll
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication.pdb
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\Common.dll
+C:\repos\aspmvc\WebApplication1\bin\Debug\netcoreapp2.0\Common.pdb
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.csprojAssemblyReference.cache
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.AssemblyInfoInputs.cache
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.AssemblyInfo.cs
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.csproj.CopyComplete
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.dll
+C:\repos\aspmvc\WebApplication1\obj\Debug\netcoreapp2.0\WebApplication.pdb
