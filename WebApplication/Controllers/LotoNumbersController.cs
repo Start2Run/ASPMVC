@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication1.Controllers
+namespace WebApplication.Controllers
 {
     public class LotoNumbersController : Controller
     {
-        public static List<Models.LotoNumber> Lst = CreateList();
+        public static List<Models.LotoNumber> Lst = CreateList().GetAwaiter().GetResult();
         public IActionResult Index()
         {
             return View();
@@ -22,19 +23,20 @@ namespace WebApplication1.Controllers
             return View(Lst);
         }
 
-        private static List<Models.LotoNumber> CreateList()
+        private static async Task<List<Models.LotoNumber>> CreateList()
         {
+            await Common.Helper.LoadDataFromCsvAsync();
+
             var lst = new List<Models.LotoNumber>();
             for (var i = 1; i <= Shared_Functions.Variables.N; i++)
             {
-                var number = new Models.LotoNumber();
-                number.Index = i;
+                var number = new Models.LotoNumber {Index = i};
                 lst.Add(number);
             }
             return lst;
         }
 
-        public ActionResult OnBtnClick(Models.LotoNumber number)
+        public ActionResult OnBtnClick(WebApplication.Models.LotoNumber number)
         {
             var value = Lst.FirstOrDefault(x => x.Index == number.Index);
             if (value != null)

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication1.Models.LotoNumber>
+﻿@model IEnumerable<WebApplication.Models.LotoNumber>
 
 @{
     ViewData["Title"] = "Choose Numbers";
@@ -8,7 +8,6 @@
 <p>
     @foreach (var item in Model)
     {
-        <input type="submit" value=" @Html.DisplayFor(modelItem => item.StringValue)" class="btn btn-primary" style=" width:100px; height:100px; background-color:@item.Color " onclick="window.location.href='@Url.Action("OnBtnClick", "LotoNumbers", item)'" />
+        <input type="submit" value=" @Html.DisplayFor(modelItem => item.StringValue)" class="btn btn-primary" style=" width:100px; height:100px; background-color:@item.Color " onclick="window.location.href = '@Url.Action("OnBtnClick", "LotoNumbers", item)'" />
     }
 </p>
-@*<input type="submit" value="@Html.DisplayFor(modelItem => item.StringValue)" formaction="OnBtnClick" class="btn btn-primary" style=" width:100px; height:100px; background-color:@item.Color " />*@

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication1.Shared_Functions
+namespace WebApplication.Shared_Functions
 {
     public static class Variables
     {

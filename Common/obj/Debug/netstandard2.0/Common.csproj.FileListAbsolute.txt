@@ -6,3 +6,12 @@ C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
 C:\repos\aspmvc\Common\bin\Debug\netstandard2.0\Common.pdb
 C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.dll
 C:\repos\aspmvc\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.csproj.GenerateResource.cache
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.dll
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.pdb
+D:\School\ASPMVC\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\School\ASPMVC\Common\bin\Debug\netstandard2.0\Common.dll
+D:\School\ASPMVC\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.Properties.Resources.resources
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\School\ASPMVC\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs

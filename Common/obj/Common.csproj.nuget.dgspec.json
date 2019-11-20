@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\aspmvc\\Common\\Common.csproj": {}
+    "D:\\School\\ASPMVC\\Common\\Common.csproj": {}
   },
   "projects": {
-    "C:\\repos\\aspmvc\\Common\\Common.csproj": {
+    "D:\\School\\ASPMVC\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\aspmvc\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\School\\ASPMVC\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\repos\\aspmvc\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\Mihai\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\aspmvc\\Common\\obj\\",
+        "projectPath": "D:\\School\\ASPMVC\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Molaru\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\ASPMVC\\Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mihai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Molaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +25,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://feeds.genetec.com/nuget/nuget": {}
         },
         "frameworks": {
           "netstandard2.0": {
