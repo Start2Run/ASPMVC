@@ -8,17 +8,17 @@ namespace Common.Models
         [Name("Date")]
         public System.DateTime Date { get; set; }
         [Name("N1")]
-        public string N1 { get; set; }
+        public int N1 { get; set; }
         [Name("N2")]
-        public string N2 { get; set; }
+        public int N2 { get; set; }
         [Name("N3")]
-        public string N3 { get; set; }
+        public int N3 { get; set; }
         [Name("N4")]
-        public string N4 { get; set; }
+        public int N4 { get; set; }
         [Name("N5")]
-        public string N5 { get; set; }
+        public int N5 { get; set; }
         [Name("N6")]
-        public string N6 { get; set; }
+        public int N6 { get; set; }
     }
 
     public sealed class ExtractionModelMap : ClassMap<ExtractionModel>

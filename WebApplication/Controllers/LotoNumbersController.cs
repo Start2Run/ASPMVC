@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Common.Managers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication.Controllers
@@ -8,6 +10,15 @@ namespace WebApplication.Controllers
     public class LotoNumbersController : Controller
     {
         public static List<Models.LotoNumber> Lst = CreateList().GetAwaiter().GetResult();
+
+        private ICsvManager m_csvManager;
+
+        public LotoNumbersController(ICsvManager csvManager)
+        {
+            m_csvManager = csvManager ?? throw new ArgumentNullException(nameof(csvManager), "The csvManager is null");
+            m_csvManager.LoadDataFromCsvAsync();
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -25,18 +36,17 @@ namespace WebApplication.Controllers
 
         private static async Task<List<Models.LotoNumber>> CreateList()
         {
-            await Common.Helper.LoadDataFromCsvAsync();
-
             var lst = new List<Models.LotoNumber>();
             for (var i = 1; i <= Shared_Functions.Variables.N; i++)
             {
-                var number = new Models.LotoNumber {Index = i};
+                var number = new Models.LotoNumber { Index = i };
                 lst.Add(number);
             }
+
             return lst;
         }
 
-        public ActionResult OnBtnClick(WebApplication.Models.LotoNumber number)
+        public ActionResult OnBtnClick(Models.LotoNumber number)
         {
             var value = Lst.FirstOrDefault(x => x.Index == number.Index);
             if (value != null)

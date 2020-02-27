@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Common.Managers;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,7 +18,16 @@ namespace WebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            RegisterServices(services);
             services.AddMvc();
+        }
+
+        public void RegisterServices(IServiceCollection services)
+        {
+            var extractionsManager = new ExtractionsManager();
+            services.AddSingleton<IExtractionsManager>(extractionsManager);
+            services.AddSingleton<ICsvManager>(extractionsManager);
+            services.AddSingleton<IFilterManager, FilterManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
